@@ -1,12 +1,36 @@
 <HTML>
     <HEAD>
-        <TITLE> Membuat tulisan bergerak </TITLE>
+        <TITLE> Mencoba Table, Text Box, Text Area </TITLE>
     </HEAD>
         <BODY>
-            <MARQUEE>
-                <FONT SIZE=16 COLOR="BLUE" FACE="VERDANA">...
-                    2322901_Devina Test Hosting ...
-                </FONT>
-            </MARQUEE>
+            <FORM METHOD = "POST" ACTION ="proses.php">
+                <TABLE border = "0">
+                    <TR>
+                        <TD>Nama</TD>
+                        <TD>:</TD>
+                        <TD><INPUT TYPE = "text" NAME = "name"></TD>
+                    </TR>
+
+                    <TR>
+                        <TD>Email</TD>
+                        <TD>:</TD>
+                        <TD><INPUT TYPE = "text" NAME = "email"></TD>
+                    </TR>
+                    
+                    <TR>
+                        <TD>Komentar</TD>
+                        <TD>:</TD>
+                        <TD><TEXTAREA NAME = "email" ROWS ="5" COLS="40"></TEXTAREA></TD>
+                    </TR>
+
+                    <TR>
+                        <TD align = "center" colspan="3">
+                            <INPUT TYPE = "reset" VALUE="BATAL">
+                            <INPUT TYPE = "submit" VALUE="KIRIM">
+                        </TD>
+                    </TR>
+
+                </TABLE>
+            </FORM>
         </BODY>
     </HTML>
