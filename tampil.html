@@ -1,36 +1,21 @@
-<HTML>
-    <HEAD>
-        <TITLE> Mencoba Table, Text Box, Text Area </TITLE>
-    </HEAD>
-        <BODY>
-            <FORM METHOD = "POST" ACTION ="proses.php">
-                <TABLE border = "0">
-                    <TR>
-                        <TD>Nama</TD>
-                        <TD>:</TD>
-                        <TD><INPUT TYPE = "text" NAME = "name"></TD>
-                    </TR>
-
-                    <TR>
-                        <TD>Email</TD>
-                        <TD>:</TD>
-                        <TD><INPUT TYPE = "text" NAME = "email"></TD>
-                    </TR>
-                    
-                    <TR>
-                        <TD>Komentar</TD>
-                        <TD>:</TD>
-                        <TD><TEXTAREA NAME = "email" ROWS ="5" COLS="40"></TEXTAREA></TD>
-                    </TR>
-
-                    <TR>
-                        <TD align = "center" colspan="3">
-                            <INPUT TYPE = "reset" VALUE="BATAL">
-                            <INPUT TYPE = "submit" VALUE="KIRIM">
-                        </TD>
-                    </TR>
-
-                </TABLE>
-            </FORM>
-        </BODY>
-    </HTML>
+<html>
+<head>
+<script language="javascript">
+function hitung()
+{
+n=document.karakter.k.value;
+document.karakter.j.value=n.length;
+}
+</script>
+</head>
+<body>
+<h1>Hitung Jumlah Karakter</h1>
+<FORM name="karakter">
+Input Kata: <INPUT type="text" name="k" size="50" maxlength="50"> <br>
+<INPUT type="button" name="Tombol1" value="Hitung" onclick="hitung( )">
+<br>
+Jumlah karakter:  <INPUT type="text" name="j" size="50" maxlength="50">
+<br>
+</FORM>
+</body>
+</html>
