@@ -1,18 +1,14 @@
 <HTML>
     <HEAD>
-        <TITLE>Frames dengan Borders</TITLE>
+        <TITLE>Beruang Consultant</TITLE>
     </HEAD>
-
-    <FRAMESET ROWS = "30%,70%">
-        <FRAME SRC ="header.html" name ="mainFrame" frameborder="no" scrolling="no"noresize>
-        <FRAMESET COLS="25%,*">
-            <FRAME SRC="menu.html" name = "menuFrame" scrolling = "no" noresize>
-            <FRAME SRC="tampil.html" name = "bottomFtame" scrolling = "yes">
-        </FRAMESET>
+    <FRAMESET ROWS = "10%,*,10%">
+        <FRAME SRC ="header.html" name ="mainFrame" frameborder=2 scrolling="no" noresize>
+        <FRAME SRC="content.html" name = "menuFrame" scrolling = "yes">
+        <FRAME SRC="footer.html" name = "bottomFrame" frameborder=2 scrolling = "no" noresize>
+    </FRAMESET>
     <NOFRAMES>
         <BODY>
-            Browsser anda tidak mendukung frame. silahkan lihat:
-            <A HREF="tampil.html">nonframes version</A>
         </BODY>
     </NOFRAMES>
 
