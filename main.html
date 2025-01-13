@@ -1,15 +1,99 @@
-<HTML>
-    <HEAD>
-        <TITLE>Beruang Consultant</TITLE>
-    </HEAD>
-    <FRAMESET ROWS = "10%,*,10%">
-        <FRAME SRC ="header.html" name ="mainFrame" frameborder=2 scrolling="no" noresize>
-        <FRAME SRC="content.html" name = "menuFrame" scrolling = "yes">
-        <FRAME SRC="footer.html" name = "bottomFrame" frameborder=2 scrolling = "no" noresize>
-    </FRAMESET>
-    <NOFRAMES>
-        <BODY>
-        </BODY>
-    </NOFRAMES>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Story</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
 
-</HTML>
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Share Your Story</h1>
+</header>
+
+<div class="container">
+    <form action="#" method="POST">
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter your story title" required>
+
+        <label for="subtitle">Sub Title</label>
+        <input type="text" id="subtitle" name="subtitle" placeholder="Enter your story subtitle">
+
+        <label for="story">Story</label>
+        <textarea id="story" name="story" placeholder="Write your story here..." required></textarea>
+
+        <label for="hashtags">Hashtags</label>
+        <input type="text" id="hashtags" name="hashtags" placeholder="Enter hashtags (e.g., #gardening #inspiration)">
+
+        <button type="submit">Post Story</button>
+    </form>
+</div>
+
+</body>
+</html>
